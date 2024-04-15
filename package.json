@@ -1,0 +1,8 @@
+{
+  "name": "petmarket_2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/albersiern/petmarket_2.git",
+  "author": "Seyran <mellodia163@gmail.com>",
+  "license": "MIT"
+}
