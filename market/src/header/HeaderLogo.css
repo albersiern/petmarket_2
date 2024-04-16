@@ -1,0 +1,18 @@
+.header_block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 50px;
+}
+
+@font-face {
+  font-family: inkut-m;
+  src: url(../assets/inkut/InknutAntiqua-Medium.ttf);
+}
+.header_logo {
+  font-size: 50px;
+  color: #fff;
+  font-family: inkut-m;
+  margin-left: 70px;
+}/*# sourceMappingURL=HeaderLogo.css.map */

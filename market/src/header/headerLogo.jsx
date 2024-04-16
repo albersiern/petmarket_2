@@ -1,13 +1,12 @@
-const Search = () => {
+import './HeaderLogo.scss'
+
+
+const HeaderLogo = () => {
     return (
-        <div className="h-[150px] w-[100%] flex justify-center items-center">
-            <div className="h-10 w-[400px] relative">
-                <input
-                    className="h-10 w-[400px] border-2 border-cyan-800 rounded-full outline-0 p-3
-          text-cyan-600 focus:drop-shadow-xl"
-                />
-            </div>
+        <div className='header_block'>
+            <p className='header_logo'>Logo</p>
         </div>
     )
 }
-export default Search
+
+export default HeaderLogo
