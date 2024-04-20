@@ -1,0 +1,43 @@
+nav {
+  width: 500px;
+  height: 60px;
+  background-color: #ffc758;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50px;
+  z-index: 9999;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  position: absolute;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+}
+nav form {
+  position: relative;
+}
+nav form input {
+  outline: none;
+  background-color: #f2a82b;
+  font-size: 23px;
+  width: 200px;
+  margin-right: 10px;
+  border-radius: 50px;
+  padding-left: 5px;
+  color: #fff;
+}
+nav form label {
+  position: absolute;
+  right: 15px;
+  top: 3px;
+}
+.icon {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}/*# sourceMappingURL=navigation.css.map */
