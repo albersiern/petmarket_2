@@ -5,13 +5,17 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import NikeOne from '../assets/images/nike_1.png'
+import './sliderStyles/slider.scss'
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-export const Slider = ({ slides }) => {
+export const Slider = () => {
     return (
         <Swiper
-            spaceBetween={50}
             modules={[Navigation]}
-            slidesPerView={3}
+            slidesPerView={1}
             navigation
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
@@ -28,14 +32,18 @@ export const Slider = ({ slides }) => {
                         veritatis voluptates provident laborum temporibus aperiam dolores corrupti ad earum quas
                         doloremque delectus, fuga incidunt magnam molestias cum officiis fugit?
                     </p>
+                    <button>more <FontAwesomeIcon className='fill-white' icon={faArrowRight} /></button>
                 </div>
                 <div className='slider_side-right'>
-                    <div className="circles big">
-                        <div className="circles med">
-                            <div className="circle small"></div>
+                    <div className="circles meg">
+                        <div className="circles big">
+                            <div className="circles med">
+                                <div className="circles small"></div>
+                            </div>
                         </div>
                     </div>
-                    <img src={NikeOne} alt="" />
+
+                    <img src={NikeOne} className='slideImage' alt="nike" width={600} />
                 </div>
             </SwiperSlide>
             <SwiperSlide className='slide'>
@@ -48,14 +56,18 @@ export const Slider = ({ slides }) => {
                         veritatis voluptates provident laborum temporibus aperiam dolores corrupti ad earum quas
                         doloremque delectus, fuga incidunt magnam molestias cum officiis fugit?
                     </p>
+                    <button>more <FontAwesomeIcon className='fill-white' icon={faArrowRight} /></button>
                 </div>
                 <div className='slider_side-right'>
-                    <div className="circles big">
-                        <div className="circles med">
-                            <div className="circle small"></div>
+                    <div className="circles meg">
+                        <div className="circles big">
+                            <div className="circles med">
+                                <div className="circles small"></div>
+                            </div>
                         </div>
                     </div>
-                    <img src={NikeOne} alt="" />
+
+                    <img src={NikeOne} className='slideImage' alt="nike" width={600} />
                 </div>
             </SwiperSlide>
             <SwiperSlide className='slide'>
@@ -68,14 +80,18 @@ export const Slider = ({ slides }) => {
                         veritatis voluptates provident laborum temporibus aperiam dolores corrupti ad earum quas
                         doloremque delectus, fuga incidunt magnam molestias cum officiis fugit?
                     </p>
+                    <button>more <FontAwesomeIcon className='fill-white' icon={faArrowRight} /></button>
                 </div>
                 <div className='slider_side-right'>
-                    <div className="circles big">
-                        <div className="circles med">
-                            <div className="circle small"></div>
+                    <div className="circles meg">
+                        <div className="circles big">
+                            <div className="circles med">
+                                <div className="circles small"></div>
+                            </div>
                         </div>
                     </div>
-                    <img src={NikeOne} alt="" />
+
+                    <img src={NikeOne} className='slideImage' alt="nike" width={600} />
                 </div>
             </SwiperSlide>
             <SwiperSlide className='slide'>
@@ -88,16 +104,20 @@ export const Slider = ({ slides }) => {
                         veritatis voluptates provident laborum temporibus aperiam dolores corrupti ad earum quas
                         doloremque delectus, fuga incidunt magnam molestias cum officiis fugit?
                     </p>
+                    <button>more <FontAwesomeIcon className='fill-white' icon={faArrowRight} /></button>
                 </div>
                 <div className='slider_side-right'>
-                    <div className="circles big">
-                        <div className="circles med">
-                            <div className="circle small"></div>
+                    <div className="circles meg">
+                        <div className="circles big">
+                            <div className="circles med">
+                                <div className="circles small"></div>
+                            </div>
                         </div>
                     </div>
-                    <img src={NikeOne} alt="" />
+
+                    <img src={NikeOne} className='slideImage' alt="nike" width={600} />
                 </div>
             </SwiperSlide>
         </Swiper>
-    )
+        )
 }
